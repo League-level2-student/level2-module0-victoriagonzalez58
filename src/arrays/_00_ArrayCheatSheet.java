@@ -22,16 +22,26 @@ public class _00_ArrayCheatSheet {
 		int[] Irray = new int[50];
 		//7. use a for loop to make every value of the integer array a random number
 		Random rand = new Random();
-		int intran = rand.nextInt(250);
 		for(int i=0; i<Irray.length;i++){
-			System.out.println(Irray[i]);
+			int intran = rand.nextInt(250);
 			Irray[i]=intran;
 		}
 		
 		//8. without printing the entire array, print only the smallest number in the array
+		int smallest = Irray[1];
+		int biggest = Irray[1];
+		for(int i=0; i<Irray.length;i++){
+			if(Irray[i]<smallest){
+				smallest=Irray[i];
+			}else if(Irray[i]>biggest){
+				biggest=Irray[i];
+			}
+		}
+		System.out.println(smallest+"ahh");
 		
 		//9 print the entire array to see if step 8 was correct
 		
 		//10. print the largest number in the array.
+		System.out.println(biggest+"ahh");
 	}
 }
