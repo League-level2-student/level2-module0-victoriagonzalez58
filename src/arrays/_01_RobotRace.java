@@ -5,13 +5,18 @@ import org.jointheleague.graphical.robot.Robot;
 public class _01_RobotRace {
 	//1. make a main method
 public static void main(String[] agrs){
+
 	//2. create an array of 5 robots.
-Robot [] Ray = new Robot[5];
+	
+	Robot[] ray =  new Robot[5];
+	int x = 100;
 	//3. use a for loop to initialize the robots.
-for(int i=0; i<Ray.length; i++){
-	System.out.println(Ray[i]);
+for(int i=0; i<ray.length; i++){
+	ray [i] = new Robot();
+	ray[i].moveTo(x,500);
+	x=x+150;
 }
-		//4. make each robot start at the bottom of the screen, side by side, facing up
+	//4. make each robot start at the bottom of the screen, side by side, facing up
 
 	//5. use another for loop to iterate through the array and make each robot move 
 	//   a random amount less than 50.
