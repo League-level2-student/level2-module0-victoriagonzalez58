@@ -31,9 +31,8 @@ for(int i=0; i<ray.length; i++){
 	int coop = rayban.nextInt(50);
 	ray[i].setSpeed(30);
 	ray[i].move(coop);
-	y=y-10;
 }
-}while (y>=50);
+}while (honestly plz ask);
 	//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
 
 	//7. declare that robot the winner and throw it a party!
