@@ -23,22 +23,40 @@ for(int i=0; i<ray.length; i++){
 
 	//5. use another for loop to iterate through the array and make each robot move 
 	//   a random amount less than 50.
-Random rayban = new Random();
+Random fifty = new Random();
+
+int hey = 0;
+int yo =0;
+
+int loser = hey;
+int winner = hey;
 
 do{
 
 for(int i=0; i<ray.length; i++){
-	int coop = rayban.nextInt(50);
+	int coop = fifty.nextInt(50);
 	ray[i].setSpeed(30);
 	ray[i].move(coop);
+	hey = ray[i].getY();
+	if(hey<loser){
+		loser=hey;
+	}
+	if(hey>winner){
+		winner=hey;
+	winner=ray[i];
 }
-}while (honestly plz ask);
+	
+}System.out.println(winner+"wooo");
+}while (hey>=90);
+
 	//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
 
 	//7. declare that robot the winner and throw it a party!
 
+
 	//8. try different races with different amounts of robots.
 
 	//9. make the robots race around a circular track.
+
 }
 }
