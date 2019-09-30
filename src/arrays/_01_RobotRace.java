@@ -17,7 +17,7 @@ public static void main(String[] agrs){
 for(int i=0; i<ray.length; i++){
 	ray [i] = new Robot();
 	ray[i].moveTo(x,y);
-	x=x+150;
+	x=x+100;
 }
 	//4. make each robot start at the bottom of the screen, side by side, facing up
 
@@ -38,17 +38,20 @@ for(int i=0; i<ray.length; i++){
 	ray[i].setSpeed(30);
 	ray[i].move(coop);
 	hey = ray[i].getY();
+	yo = ray[i].getX();
+	
 	if(hey<loser){
 		loser=hey;
 	}
 	if(hey>winner){
 		winner=hey;
-	winner=ray[i];
+	winner=yo;
 }
 	
-}System.out.println(winner+"wooo");
+}
 }while (hey>=90);
 
+System.out.println("Robot "+yo+" has won! WOOOOOOO!");
 	//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
 
 	//7. declare that robot the winner and throw it a party!
